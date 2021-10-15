@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
 @Component({
   selector: 'app-timeline',
