@@ -26,17 +26,19 @@ export class TimelineComponent implements OnInit {
         transformOrigin: 'center', 
         ease: "elastic(2.5, 1)"
       }})
-    .to(".ball02, .text01", {}, 0.2) 
-    .to(".ball02, .description", {}, 0.2)
-    .to(".ball03, .text02", {}, 0.33)
-    .to(".ball04, .text03", {}, 0.46)
+      .to(".ball02, .text01", {}, 0.2) 
+      .to(".ball02, .d1", {}, 0.2)
+      .to(".ball02, .LM1", {}, 0.2)
+      .to(".ball03, .text02", {}, 0.33)
+      .to(".ball03, .d2", {}, 0.33)
+      .to(".ball04, .text03", {}, 0.46)
     var num : gsap.BooleanValue | gsap.DrawSVGTarget | undefined = false;
     this.trigger1 = gsap.timeline({defaults: {duration: 1},
       scrollTrigger: {
         trigger: "#svg",
         scrub: true,
-        start: "top center",
-        end: "bottom center"
+        start: "top 20",
+        end: "bottom 400"
       }})
     .to(".ball01", {duration: 0.01, autoAlpha: 1})
     .from(".theLine", {drawSVG: num}, 0)

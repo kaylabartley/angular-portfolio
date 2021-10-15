@@ -8,26 +8,26 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 2px;
-    font-size: 180px;
+    font-size: calc(30px + 9vw);
     line-height: .75;
     color: transparent;
     -webkit-text-fill-color: transparent;
     overflow: hidden;
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif) ;
+    background-image: url(https://media2.giphy.com/media/BQRRM0T4C0MXZixwiu/giphy.gif?cid=ecf05e47xby4k384a0y7j0r23osxnp84p6qk324td8k2rmur&rid=giphy.gif&ct=g) ;
     background-position: center; 
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
     width:80%;
-    margin: 24vh auto 5vh auto;
+    margin: calc(60px + 25vh) auto 3vh auto;
 }
 h2{
     margin:0;
-    font-size: 35px;
+    font-size: calc(15px + 1vw);
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     text-align: center;
-    font-weight: 5;
+    font-weight: 3;
     color: rgb(255, 255, 255, .3);
 }
 *, *:before, *:after {
@@ -41,8 +41,8 @@ h2{
       display: block;
       margin: 0 auto;
       width: 24px;
-      height: 100px;
-      margin-top: 13vh;
+      height: calc(10px + 3vh);
+      margin-top: 5vh;
   }
   
   

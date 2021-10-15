@@ -31,6 +31,6 @@ text {
   font-family: "Signika Negative", sans-serif; 
   visibility: hidden;
 }
-.description{
+.d1, .d2, .LM{
   font-size: 10px;
 }
