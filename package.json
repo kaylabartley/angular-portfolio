@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "npm install && npm install -g @angular/cli && npm link @angular/cli && cd client && npm run build",
+    "prestart": "npm install && npm link @angular/cli && cd client && npm run build",
     "start": "cd server && npm start",
     "install": "cd server && npm i && cd ../client && npm i"
   },
@@ -17,8 +17,13 @@
   "bugs": {
     "url": "https://github.com/kaylabartley/angular-portfolio/issues"
   },
-  "homepage": "https://github.com/kaylabartley/angular-portfolio#readme"
+  "homepage": "https://github.com/kaylabartley/angular-portfolio#readme",
+  "dependencies": {
+    "@angular/cli": "^12.2.10"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.7",
+    "@angular/cli": "~12.2.7",
+    "@angular/compiler-cli": "~12.2.0"
+  }
 }
-
-
-
