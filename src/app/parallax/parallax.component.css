@@ -4,7 +4,6 @@ section {
     display: flex;
     margin:0;
     padding:0;
-    background-color: black;
 }
 #footer{
   color:rgb(139, 40, 214);
@@ -25,6 +24,7 @@ section {
   justify-content: space-between;
   align-items: center;
   height:  180vh;
+  background-color: black;
   
 }
 #contact-title{
