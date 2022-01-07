@@ -7,7 +7,7 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 2px;
-    font-size: calc(30px + 9vw);
+    font-size: calc(20px + 9vw);
     line-height: .75;
     color: transparent;
     -webkit-text-fill-color: transparent;
@@ -18,8 +18,8 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    width:80%;
-    margin: calc(60px + 25vh) auto 3vh auto;
+    width:99%;
+    margin: calc(58px + 21vh) auto 3vh auto;
 }
 h2{
     margin:0;
@@ -27,7 +27,7 @@ h2{
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     text-align: center;
     font-weight: 3;
-    color: rgb(255, 255, 255, .3);
+    color: rgba(255, 255, 255, .3);
 }
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;

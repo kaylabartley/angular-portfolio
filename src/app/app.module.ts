@@ -7,6 +7,10 @@ import { ParallaxComponent } from './parallax/parallax.component';
 import { TitleComponent } from './title/title.component';
 import { TimelineComponent } from './timeline/timeline.component';
 import { MenuButtonComponent } from './menu-button/menu-button.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+import { LayoutModule } from '@angular/cdk/layout';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,14 @@ import { MenuButtonComponent } from './menu-button/menu-button.component';
     ParallaxComponent,
     TitleComponent,
     TimelineComponent,
-    MenuButtonComponent
+    MenuButtonComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

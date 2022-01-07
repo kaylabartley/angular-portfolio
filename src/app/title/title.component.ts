@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, BreakpointState, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-title',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.css']
 })
 export class TitleComponent implements OnInit {
+  constructor(public breakpointObserver: BreakpointObserver) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    var kayla = document.getElementById('kayla');
+    this.breakpointObserver
+      .observe([Breakpoints.Large, Breakpoints.XLarge])
+      .subscribe((state: BreakpointState) => {
+        if (state.matches && kayla) {
+          kayla.style.fontSize = `12vw`;
+         }
+        else if(kayla) kayla.style.fontSize = `calc(20px + 9vw)`
+      });
   }
-
 }

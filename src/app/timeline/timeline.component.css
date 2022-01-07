@@ -1,11 +1,10 @@
 
 *{
-	height: 400vh;
-  background: black;
-  color: white;
-  width: 100%;
+  background-position-x: 100%;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+  color: white;
 }
 
 
@@ -13,6 +12,7 @@ svg {
   max-width: 600px;
   overflow: visible;
   margin-top: 1vh;
+  height: 400vh;
 }
 
 .ball {
@@ -31,6 +31,200 @@ text {
   font-family: "Signika Negative", sans-serif; 
   visibility: hidden;
 }
-.d1, .d2, .LM{
+.d1, .d2, .d3, .d4{
   font-size: 10px;
+}
+
+h2{
+  margin-top: 100px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: calc(12px + 3vw);
+  margin-bottom: 100px;
+}
+#planets{
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle{
+  display: inline-block;
+  position:relative;
+  width:10%;
+  margin: 6%;
+  height: auto;
+  padding-bottom:10%;
+  border-radius:50%;
+}
+.circle h3{
+  position:absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.planet1{
+  background:blue;
+  box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px #f0f,
+      inset -20px 0 80px #0ff,
+      inset 20px 0 300px #f0f,
+      inset -20px 0 300px #0ff,
+      0 0 50px #fff,
+      -10px 0 80px #f0f,
+      10px 0 80px #0ff;
+}
+.planet2{
+  background:yellow;
+  box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(0, 255, 166),
+      inset -20px 0 80px rgb(115, 255, 0),
+      inset 20px 0 300px rgb(0, 136, 255),
+      inset -20px 0 300px rgb(255, 145, 0),
+      0 0 50px #fff,
+      -10px 0 80px rgb(0, 255, 123),
+      10px 0 80px rgb(255, 225, 0);
+}
+.planet3{
+  background:rgb(214, 11, 204);
+  box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(255, 0, 128),
+      inset -20px 0 80px rgb(102, 0, 255),
+      inset 20px 0 300px rgb(255, 0, 64),
+      inset -20px 0 300px rgb(132, 0, 255),
+      0 0 50px #fff,
+      -10px 0 80px rgb(255, 0, 0),
+      10px 0 80px rgb(93, 0, 255);
+}
+.planet4{
+  background:green;
+  box-shadow:
+      inset 0 0 50px #fff,
+      inset 20px 0 80px rgb(0, 208, 255),
+      inset -20px 0 80px rgb(229, 255, 0),
+      inset 20px 0 300px rgb(0, 76, 255),
+      inset -20px 0 300px rgb(255, 247, 0),
+      0 0 50px #fff,
+      -10px 0 80px rgb(0, 255, 238),
+      10px 0 80px rgb(255, 238, 0);
+}
+.neon1 {
+  color: #fff;
+  text-shadow:
+    0 0 5px rgb(159, 183, 255),
+    0 0 10px rgb(159, 183, 255),
+    0 0 20px rgb(159, 183, 255),
+    0 0 40px rgb(0, 0, 255),
+    0 0 80px rgb(0, 0, 255),
+    0 0 90px rgb(0, 0, 255),
+    0 0 100px rgb(0, 0, 255),
+    0 0 150px rgb(0, 0, 255);
+}
+.neon2 {
+  color: #fff;
+  text-shadow:
+    0 0 5px rgb(253, 148, 239),
+    0 0 10px rgb(253, 148, 239),
+    0 0 20px rgb(253, 148, 239),
+    0 0 40px rgb(255, 0, 200),
+    0 0 80px rgb(255, 0, 200),
+    0 0 90px rgb(255, 0, 200),
+    0 0 100px rgb(255, 0, 200),
+    0 0 150px rgb(255, 0, 200);
+}
+.neon3 {
+  color: #fff;
+  text-shadow:
+    0 0 5px rgb(150, 247, 172),
+    0 0 10px rgb(150, 247, 172),
+    0 0 20px rgb(150, 247, 172),
+    0 0 40px rgb(8, 206, 54),
+    0 0 80px rgb(8, 206, 54),
+    0 0 90px rgb(8, 206, 54),
+    0 0 100px rgb(8, 206, 54),
+    0 0 150px rgb(8, 206, 54);
+}
+.neon4 {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(221, 255, 0),
+    0 0 80px rgb(221, 255, 0),
+    0 0 90px rgb(221, 255, 0),
+    0 0 100px rgb(221, 255, 0),
+    0 0 150px rgb(221, 255, 0);
+}
+li{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+#skill-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#roll-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+.big-font li{
+  font-size: calc(10px + 1vw);
+  margin-bottom: 34px;
+}
+
+.arrows{
+  margin-top:0;
+}
+#mouse_scroll {
+    display: block;
+    width: 24px;
+    height: calc(10px + 3vh);
+    margin-top: 5vh;
+}
+
+
+.m_scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 6px solid rgba(255, 255, 255, 0.938);
+  border-bottom: 6px solid rgba(255, 255, 255, 0.53);
+  margin: 0 0 0px 4px;
+  
+  width: 40px;
+  height: 40px;
+}
+
+
+.unu
+{
+  margin-top: 1px;
+}
+
+.unu, .doi, .trei
+{
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+    animation: mouse-scroll 1s infinite;
+  
+}
+
+#timeline-title{
+  margin: 20% auto 10% auto;
 }
